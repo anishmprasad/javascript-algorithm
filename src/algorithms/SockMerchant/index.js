@@ -28,4 +28,9 @@
 // 3
 
 // Complete the sockMerchant function below.
-function sockMerchant(n, ar) {}
+function sockMerchant(n, ar) {
+	console.log('simple node script');
+	return 'simple node script';
+}
+
+module.exports = sockMerchant;
