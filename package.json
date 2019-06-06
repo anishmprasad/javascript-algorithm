@@ -1,13 +1,11 @@
 {
-    "name": "javascript-algorithms",
-    "version": "0.0.1",
-    "private": true,
-    "scripts": {
-        "stage1": "webpack --config public/webpack/web.stage1.config.js --progress --colors"
-    },
-    "dependencies": {
-        "jest":"^24.8.0"
-    },
-    "devDependencies": {
-    }
+	"name": "javascript-algorithms",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"test": "jest --watch -- ./ArrayManipulation/index.test.js --watch"
+	},
+	"devDependencies": {
+		"jest": "^24.8.0"
+	}
 }
