@@ -3,7 +3,7 @@
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
-		"test": "jest --watch -- ./SockMerchant/index.test.js --watch"
+		"test": "jest --watch -- ./**/*.test.js --watch"
 	},
 	"devDependencies": {
 		"jest": "^24.8.0"
