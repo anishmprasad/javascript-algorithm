@@ -71,5 +71,9 @@ function getMetrics(a, b) {
 }
 
 function equals(a, b) {
-	return a === b;
+	return [a].map(a => {
+		return [b].map(b => {
+			return a === b;
+		});
+	});
 }
