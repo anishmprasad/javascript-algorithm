@@ -3,7 +3,7 @@
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
-		"test": "jest --watch -- ../equals/index.test.js --watch"
+		"test": "jest --watchAll"
 	},
 	"devDependencies": {
 		"jest": "^24.8.0"
