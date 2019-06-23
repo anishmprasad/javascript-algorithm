@@ -1,4 +1,5 @@
-<div style="height: 100%; overflow: auto;" id="standard_task_description" class="protected"><div class="task-description-content task-description__TaskContentWrapper-sc-380ibo-1 fDHMwF">
+{
+	/* <div style="height: 100%; overflow: auto;" id="standard_task_description" class="protected"><div class="task-description-content task-description__TaskContentWrapper-sc-380ibo-1 fDHMwF">
 
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
 
@@ -25,4 +26,46 @@
 
     function solution(A) {
         // write your code in JavaScript (Node.js 8.9.4)
-    }
+    } */
+}
+
+// function solutionx(A) {
+// 	console.log(A);
+// 	var k = A.toString().length;
+// 	if (k >= 2) {
+// 		var n = k - 1;
+// 		var i = 0;
+// 		var p = 0;
+// 		var s = [];
+// 		do {
+// 			console.log(p++);
+// 			s[p++] = A[i];
+// 			s[p++] = A[n - i];
+// 			i++;
+// 		} while (i < k / 2);
+// 		if (k % 2 != 0) {
+// 			s[n] = A[p - 1];
+// 		}
+// 		console.log('ssssss', s);
+// 		return null;
+// 	}
+// 	return A[0];
+// 	// write your code in JavaScript (Node.js 8.9.4)
+// }
+
+function solution(num) {
+	var str = num.toString();
+	var result = '';
+	if (!isNaN(num) && num >= 0 && num <= 100000000) {
+		for (var i = 0; i < str.length; i++) {
+			if (i % 2 == 0) {
+				result += str[Math.floor(i / 2)];
+			} else {
+				result += str[str.length - Math.floor(i / 2 + 1)];
+			}
+		}
+	}
+	return result;
+}
+
+module.exports = solution;

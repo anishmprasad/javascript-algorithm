@@ -1,4 +1,5 @@
-<div id='brinza-task-description'>
+{
+	/* <div id='brinza-task-description'>
 	<p>
 		Write a function <tt style='white-space:pre-wrap'>solution</tt> that, given an integer N, returns the smallest
 		number with the same number of digits. You can assume N is between 1 and 10<sup>9</sup> (a billion).
@@ -13,5 +14,24 @@
 // console.log('this is a debug message');
 
 function solution(N) {
+	// write your code in JavaScript (Node.js 8.9.4)
+} */
+}
+
+function solution(N) {
+	console.log(N);
+	var numberInString = N.toString();
+	var numberInLength = numberInString.length;
+	console.log(numberInLength);
+	var result = [];
+	var k = '';
+	for (var i = 0; i < numberInLength; i++) {
+		result.push(numberInString[i]);
+	}
+	for (var p in result.sort()) {
+		k += result[p];
+	}
+	console.log(k);
+	return k;
 	// write your code in JavaScript (Node.js 8.9.4)
 }
