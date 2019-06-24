@@ -1,5 +1,5 @@
-const solution = require('./index1');
+const solution = require('./index');
 
-test('amex1', () => {
+test('SmallestNumberWithSameDigits', () => {
 	expect(solution(123)).toBe(100);
 });
