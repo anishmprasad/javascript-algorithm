@@ -82,3 +82,8 @@
 	two. It takes one change of formation to win the tournament.
 </div>; */
 }
+
+function RockPaperScissor() {
+	return null;
+}
+module.exports = RockPaperScissor;
