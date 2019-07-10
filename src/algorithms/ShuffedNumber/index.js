@@ -29,6 +29,8 @@
     } */
 }
 
+// 123456 => 162534
+
 function solution(num) {
 	var str = num.toString();
 	var result = '';

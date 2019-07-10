@@ -1,7 +1,7 @@
 {
 	/* <div id='brinza-task-description'>
 	<p>
-		Write a function <tt style='white-space:pre-wrap'>solution</tt> that, given an integer N, returns the smallest
+		Write a function solution that, given an integer N, returns the smallest
 		number with the same number of digits. You can assume N is between 1 and 10<sup>9</sup> (a billion).
 	</p>
 	<p>
