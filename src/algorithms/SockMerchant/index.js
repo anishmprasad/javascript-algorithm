@@ -1,35 +1,43 @@
-// John works at a clothing store.He has a large pile of socks that he must pair by color for sale.Given an array of integers representing the color of each sock, determine how many pairs of socks with matching colors there are.
+/*
 
-// For example, there are  socks with colors.There is one pair of color  and one of color.There are three odd socks left, one of each color.The number of pairs is.
+Problem Statement
 
-// Function Description
+John works at a clothing store.He has a large pile of socks that he must pair by color for sale.Given an array of integers representing the color of each sock, determine how many pairs of socks with matching colors there are.
 
-// Complete the sockMerchant function in the editor below.It must return an integer representing the number of matching pairs of socks that are available.
+For example, there are  socks with colors.There is one pair of color  and one of color.There are three odd socks left, one of each color.The number of pairs is.
 
-// sockMerchant has the following parameter(s):
+Function Description
 
-// n: the number of socks in the pile
-// ar: the colors of each sock
+Complete the sockMerchant function in the editor below.It must return an integer representing the number of matching pairs of socks that are available.
 
-// Input Format
+sockMerchant has the following parameter(s):
 
-// The first line contains an integer, the number of socks represented in .
-// The second line contains  space - separated integers describing the colors  of the socks in the pile.
+n: the number of socks in the pile
+ar: the colors of each sock
 
-// Output Format
+Input Format
 
-// Return the total number of matching pairs of socks that John can sell.
+The first line contains an integer, the number of socks represented in .
+The second line contains  space - separated integers describing the colors  of the socks in the pile.
 
-// Sample Input
-// 9
-// 10 20 20 10 10 30 50 10 20
+Output Format
 
-// Sample Output
-// 3
+Return the total number of matching pairs of socks that John can sell.
+
+Sample Input
+9
+10 20 20 10 10 30 50 10 20
+
+Sample Output
+3
+
+*/
 
 // Complete the sockMerchant function below.
 function sockMerchant(n, ar) {
+	let ar = [10, 20, 20, 10, 10, 30, 50, 10, 20];
 	console.log(n, ar);
+
 	return 3;
 }
 
