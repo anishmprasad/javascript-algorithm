@@ -1,1 +1,5 @@
 ### Javascript Algorithms
+
+## Licence 
+
+MIT
