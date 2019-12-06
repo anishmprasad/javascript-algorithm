@@ -1,4 +1,6 @@
-### Javascript Algorithms
+### Javascript Algorithm
+
+[] Sock Merchant
 
 ## Licence 
 
