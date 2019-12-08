@@ -34,11 +34,53 @@ Sample Output
 */
 
 // Complete the sockMerchant function below.
-function sockMerchant(n, ar) {
-	let ar = [10, 20, 20, 10, 10, 30, 50, 10, 20];
-	console.log(n, ar);
+function sockMerchant(n = 9, ar = [10, 20, 20, 10, 10, 30, 50, 10, 20]) {
+	// console.log(n, ar);
+	// console.log(quick_Sort(ar));
 
+	// ar.sort((elem, elem2) => elem < elem2);
+	// console.log(
+	// 	quick_Sort(ar).reduce((acc, curr) => {
+	// 		return curr;
+	// 	}, {})
+	// );
+	const sort = quick_Sort(ar);
+	let lastIndex;
+	for (let i = 0; i < sort.length; i++) {
+		// console.log(sort[i]);
+	}
+	let k = sort.reduce((acc, curr) => {
+		console.log(acc, curr, lastIndex);
+
+		// if (lastIndex === curr) return acc + 1;
+		console.log(lastIndex === curr);
+		lastIndex = curr;
+		return 0;
+	}, 0);
+	console.log({ k });
+	console.log({ lastIndex });
 	return 3;
 }
+function quick_Sort(origArray) {
+	if (origArray.length <= 1) {
+		return origArray;
+	} else {
+		var left = [];
+		var right = [];
+		var newArray = [];
+		var pivot = origArray.pop();
+		var length = origArray.length;
 
+		for (var i = 0; i < length; i++) {
+			if (origArray[i] <= pivot) {
+				left.push(origArray[i]);
+			} else {
+				right.push(origArray[i]);
+			}
+		}
+
+		return newArray.concat(quick_Sort(left), pivot, quick_Sort(right));
+	}
+}
+sockMerchant();
 module.exports = sockMerchant;
