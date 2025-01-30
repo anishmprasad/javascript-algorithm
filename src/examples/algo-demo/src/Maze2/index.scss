@@ -1,0 +1,38 @@
+.maze {
+    display: grid;
+    grid-template-columns: repeat(20, 25px);
+    gap: 2px;
+    padding: 10px;
+    background-color: black;
+  }
+  
+  .maze-row {
+    display: contents;
+  }
+  
+  .maze-cell {
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+  }
+  
+  .path {
+    background-color: #f0f0f0;
+  }
+  
+  .wall {
+    background-color: #333;
+  }
+  
+  .player {
+    background-color: #00ff00; /* Green */
+  }
+  
+  .goal {
+    background-color: #ff0000; /* Red */
+  }
+  
+  .solution-path {
+    background-color: rgba(0, 0, 255, 0.4); /* Transparent Blue */
+  }
+  
