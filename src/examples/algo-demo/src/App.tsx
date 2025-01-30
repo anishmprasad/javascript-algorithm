@@ -3,11 +3,12 @@
 // import viteLogo from '/vite.svg'
 import { Route, Routes } from 'react-router';
 import './App.css'
-import { maze_30_very_tough, maze_30_very_tough_tough, maze_30x30 } from './constants/maze'
 // import Maze from './Maze'
 import Maze2 from './Maze2'
 import PageNotFound from './Page/PageNotFound';
 import Home from './Page/Home';
+import Maze from './Page/Maze';
+import Baloon from './Page/Baloon';
 
 function App() {
 
@@ -15,7 +16,8 @@ function App() {
         <>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/maze" element={<Maze2 maze={maze_30_very_tough_tough}/>} />
+            <Route path="/maze" element={<Maze />} />
+            <Route path="/baloon" element={<Baloon />} />
             <Route path="*" element={<PageNotFound />} />
           </Routes>
         </>
