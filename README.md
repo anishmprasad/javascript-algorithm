@@ -4,13 +4,11 @@
 
 ## Games
 
-- [ ] Maze
-- [ ] Balloon
-
-## Sample Image
-
-![Balloon](images/balloon.png)
+- Maze
 ![Maze](images/maze.png)
+
+- Balloon
+![Balloon](images/balloon.png)
 
 
 ## Licence 
