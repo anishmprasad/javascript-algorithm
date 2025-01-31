@@ -18,7 +18,11 @@ interface Arrow {
     moving: boolean;
 }
 
-const BalloonPop: React.FC = () => {
+interface BalloonPopProps {
+    count: (score: number) => void;
+}
+
+const BalloonPop: React.FC<BalloonPopProps> = ({count}) => {
     const canvasRef = useRef<HTMLCanvasElement | null>(null);
     const balloonsRef = useRef<Balloon[]>([]);
     const arrowRef = useRef<Arrow>({ x: 750, y: 300, width: 10, height: 5, speed: 5, moving: false });
@@ -38,7 +42,7 @@ const BalloonPop: React.FC = () => {
                 y: canvas.height,
                 radius: 20,
                 speed: Math.random() * 2 + 1,
-                popped: false
+                popped: false,
             });
             setTimeout(spawnBalloon, Math.random() * 2000 + 500);
         };
@@ -75,6 +79,7 @@ const BalloonPop: React.FC = () => {
                         arrowRef.current.y < balloon.y + balloon.radius &&
                         arrowRef.current.y + arrowRef.current.height > balloon.y - balloon.radius) {
                         balloon.popped = true;
+                        count?.(1)
                     }
                 });
 
@@ -82,7 +87,6 @@ const BalloonPop: React.FC = () => {
                     arrowRef.current = { x: 750, y: 300, width: 10, height: 5, speed: 5, moving: false };
                 }
             }
-
             ctx.fillStyle = "black";
             ctx.fillRect(arrowRef.current.x, arrowRef.current.y, arrowRef.current.width, arrowRef.current.height);
             requestAnimationFrame(updateGame);
@@ -101,7 +105,6 @@ const BalloonPop: React.FC = () => {
         window.addEventListener("keydown", handleKeyDown);
         return () => window.removeEventListener("keydown", handleKeyDown);
     }, []);
-
     return <canvas ref={canvasRef} className="gameCanvas" />;
 };
 

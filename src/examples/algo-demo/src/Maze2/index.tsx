@@ -54,7 +54,7 @@ export default function Maze({maze = maze_20}) {
     }, [player]);
 
     useEffect(() => {
-        setPath(findShortestPath());
+        setPath(findShortestPath()); // WIP
     }, []);
 
     const findShortestPath = (): Position[] => {
