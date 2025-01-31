@@ -1,5 +1,5 @@
 import { useState } from "react";
-import BalloonPop from "./BaloonPop";
+import BalloonPop from "./BalloonPop";
 
 export default function Baloon(){
     const [count, setCount] = useState(0)
