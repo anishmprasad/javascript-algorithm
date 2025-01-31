@@ -1,6 +1,8 @@
 ### Javascript Algorithm
 
 - [ ] Sock Merchant
+- [ ] Maze Game
+- [ ] Balloon Pop Game
 
 ## Games
 
