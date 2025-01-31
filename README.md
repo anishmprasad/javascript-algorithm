@@ -2,6 +2,11 @@
 
 - [ ] Sock Merchant
 
+## Games
+
+- [ ] Maze
+- [ ] Balloon
+
 ## Sample Image
 
 ![Balloon](images/balloon.png)
